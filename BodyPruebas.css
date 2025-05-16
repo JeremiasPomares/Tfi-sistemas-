@@ -1,0 +1,75 @@
+/* Estilo global */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    background-image: url("../Img/TFI.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* Contenedor principal */
+.ContenedorSuperior {
+    display: flex; /* Define un contenedor flexible */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+    min-height: calc(100vh - 20rem); /* Descuenta el espacio del header */
+    margin-top: 20px; /* Espaciado entre el header y las tarjetas */
+}
+
+/* Contenedor de las tarjetas */
+.Contenedor {
+    display: flex; /* Define un contenedor flexible */
+    flex-direction: column; /* Alinea las tarjetas en columna */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espaciado entre tarjetas */
+}
+
+/* Estilos para las tarjetas */
+.Tarjeta {
+    width: 65rem;
+    padding: 20px;
+    border: 2px solid #fafafa10;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.85rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.Separador{
+
+    display: flex; /* Hace que la imagen y descripción puedan alinearse */
+    justify-content: column; /* Divide la imagen y la descripción */
+    width: 50%; /* Asegura que ocupen el espacio completo */
+    align-items: center; /* Centra verticalmente ambos elementos */
+}
+
+.url{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.Descripcion{
+
+    text-align: justify;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.Img{
+
+    max-width: 300px; /* Controla el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espaciado respecto al texto */
+
+}
